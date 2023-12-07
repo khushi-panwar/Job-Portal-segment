@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>new_project</display-name>
+  <servlet>
+  <servlet-name>StudentData</servlet-name>
+  <servlet-class>FirstServlet.StudentData</servlet-class>
+   <multipart-config>
+     <max-file-size>10485760</max-file-size>
+            <max-request-size>20971520</max-request-size>
+            <file-size-threshold>5242880</file-size-threshold>
+</multipart-config>
+   
+  </servlet>
+  <servlet>
+  <servlet-name>RecruiterData</servlet-name>
+  <servlet-class>FirstServlet.RecruiterData</servlet-class>
+   
+  </servlet>
+  <servlet>
+  <servlet-name>notify</servlet-name>
+  <servlet-class>FirstServlet.notify</servlet-class>
+   
+  </servlet>
+  
+  <servlet>
+  <servlet-name>Login_student</servlet-name>
+  <servlet-class>FirstServlet.Login_student</servlet-class>
+   
+  </servlet>
+  <servlet>
+  <servlet-name>AdminData</servlet-name>
+  <servlet-class>FirstServlet.AdminData</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>profiledata</servlet-name>
+  <servlet-class>FirstServlet.profiledata</servlet-class>
+   
+  </servlet>
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>FirstServlet.Login</servlet-class>
+  
+  </servlet>
+  <servlet>
+  <servlet-name>Approve</servlet-name>
+  <servlet-class>FirstServlet.Approve</servlet-class>
+  
+  </servlet>
+   <servlet>
+  <servlet-name>chatgpt</servlet-name>
+  <servlet-class>FirstServlet.chatgpt</servlet-class>
+  
+  </servlet>
+  
+   <servlet>
+  <servlet-name>hiring_detail</servlet-name>
+  <servlet-class>FirstServlet.hiring_detail</servlet-class>
+  
+  </servlet>
+  <servlet>
+  <servlet-name>Invite</servlet-name>
+  <servlet-class>FirstServlet.Invite</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+ <servlet-name>StudentData</servlet-name>
+  <url-pattern>/StudentData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>notify</servlet-name>
+  <url-pattern>/notify</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+ <servlet-name>hiring_detail</servlet-name>
+  <url-pattern>/hiring_detail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>Invite</servlet-name>
+  <url-pattern>/Invite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>RecruiterData</servlet-name>
+  <url-pattern>/RecruiterData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>AdminData</servlet-name>
+  <url-pattern>/AdminData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>Login_student</servlet-name>
+  <url-pattern>/Login_student</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+ <servlet-name>profiledata</servlet-name>
+  <url-pattern>/profiledata</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>chatgpt</servlet-name>
+  <url-pattern>/chatgpt</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+ <servlet-name>Approve</servlet-name>
+  <url-pattern>/Approve</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+ <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>Register_student.jsp</welcome-file> 
+  </welcome-file-list>
+</web-app>
